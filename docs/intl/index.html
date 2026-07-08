@@ -230,6 +230,18 @@ header.on-dark .seal-sm .b{stroke:var(--petrol-deep)}
   font-family:"Fraunces",Georgia,serif;font-weight:420;
   font-size:clamp(28px,3.8vw,48px);letter-spacing:-.01em;
 }
+.tx-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(14px,1.6vw,22px);margin-top:clamp(20px,3vh,32px)}
+.tcard{display:flex;flex-direction:column;background:var(--bone);border:1px solid var(--hairline);border-radius:2px;overflow:hidden;transition:transform .35s,border-color .35s}
+.tcard:hover{transform:translateY(-4px);border-color:var(--gold)}
+.tcard .timg{aspect-ratio:3/2;background-size:contain;background-repeat:no-repeat;background-position:center;background-color:#FBF2E7}
+.tcard .tbody{display:flex;flex-direction:column;gap:6px;padding:clamp(16px,1.4vw,20px)}
+.tcard .tno{font-size:11px;letter-spacing:.14em;color:var(--gold);font-weight:500}
+.tcard .tname{font-family:"Fraunces",Georgia,serif;font-weight:420;font-size:clamp(17px,1.5vw,20px);line-height:1.15;color:var(--ink)}
+.tcard .tdesc{font-size:13px;color:var(--ink-soft);line-height:1.45}
+.tcard .tgo{margin-top:auto;padding-top:8px;font-size:12px;letter-spacing:.05em;color:var(--ink-soft);transition:color .3s}
+.tcard:hover .tgo{color:var(--gold)}
+@media(max-width:1000px){.tx-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.tx-cards{grid-template-columns:1fr}}
 .act-guide{padding:clamp(48px,7.5vh,88px) clamp(24px,5vw,72px);border-top:1px solid var(--hairline)}
 .act-guide .headrow{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:clamp(24px,3.5vh,40px)}
 .act-guide h2{font-family:"Fraunces",Georgia,serif;font-weight:420;font-size:clamp(28px,3.8vw,48px);letter-spacing:-.01em}
@@ -589,56 +601,16 @@ footer .legalnav a{border-bottom:1px solid var(--hairline);padding-bottom:2px}
     <h2>The Work</h2>
     <span class="micro">Eight disciplines, one standard</span>
   </div>
-  <nav class="tx reveal d1" aria-label="Treatments">
-    <a href="treatments/implantology.html">
-      <span class="no">01</span>
-      <span class="name">Implantology</span>
-      <span class="desc">Single tooth to full arch. Planned digitally, placed surgically, restored from our own bench.</span>
-      <span class="go">→</span>
-    </a>
-    <a href="treatments/aesthetic-dentistry.html">
-      <span class="no">02</span>
-      <span class="name">Aesthetic dentistry</span>
-      <span class="desc">Veneers, E.max, composite bonding, whitening and complete Hollywood smile design.</span>
-      <span class="go">→</span>
-    </a>
-    <a href="treatments/crowns-and-bridges.html">
-      <span class="no">03</span>
-      <span class="name">Crowns and bridges</span>
-      <span class="desc">Zirconia and lithium disilicate, milled in-house and finished by hand.</span>
-      <span class="go">→</span>
-    </a>
-    <a href="treatments/oral-surgery.html">
-      <span class="no">04</span>
-      <span class="name">Oral surgery</span>
-      <span class="desc">Extractions, impacted wisdom teeth and gingival surgery, under local or general anaesthesia.</span>
-      <span class="go">→</span>
-    </a>
-    <a href="treatments/orthodontics.html">
-      <span class="no">05</span>
-      <span class="name">Orthodontics</span>
-      <span class="desc">Braces and clear aligners, for adults and teenagers.</span>
-      <span class="go">→</span>
-    </a>
-    <a href="treatments/endodontics.html">
-      <span class="no">06</span>
-      <span class="name">Endodontics</span>
-      <span class="desc">Root canal therapy that saves the tooth you were told to lose.</span>
-      <span class="go">→</span>
-    </a>
-    <a href="treatments/periodontology.html">
-      <span class="no">07</span>
-      <span class="name">Periodontology</span>
-      <span class="desc">Gum health and restorative therapy. The foundation every smile stands on.</span>
-      <span class="go">→</span>
-    </a>
-    <a href="treatments/jaw-joint-and-pediatric-care.html">
-      <span class="no">08</span>
-      <span class="name">Jaw joint and pediatric care</span>
-      <span class="desc">TMJ disorders treated with allied medical branches; children seen in their own clinic.</span>
-      <span class="go">→</span>
-    </a>
-  </nav>
+  <div class="tx-cards reveal d1">
+  <a class="tcard" href="treatments/implantology.html"><div class="timg" style="background-image:url('assets/tedavi/tedavi-implant.jpg')"></div><div class="tbody"><span class="tno">01</span><span class="tname">Implantology</span><span class="tdesc">Single tooth to full arch. Planned digitally, placed surgically, restored from our own bench.</span><span class="tgo">Explore →</span></div></a>
+  <a class="tcard" href="treatments/aesthetic-dentistry.html"><div class="timg" style="background-image:url('assets/tedavi/tedavi-estetik.jpg')"></div><div class="tbody"><span class="tno">02</span><span class="tname">Aesthetic dentistry</span><span class="tdesc">Veneers, E.max, composite bonding, whitening and complete Hollywood smile design.</span><span class="tgo">Explore →</span></div></a>
+  <a class="tcard" href="treatments/crowns-and-bridges.html"><div class="timg" style="background-image:url('assets/tedavi/tedavi-kron.jpg')"></div><div class="tbody"><span class="tno">03</span><span class="tname">Crowns and bridges</span><span class="tdesc">Zirconia and lithium disilicate, milled in-house and finished by hand.</span><span class="tgo">Explore →</span></div></a>
+  <a class="tcard" href="treatments/oral-surgery.html"><div class="timg" style="background-image:url('assets/tedavi/tedavi-cerrahi.jpg')"></div><div class="tbody"><span class="tno">04</span><span class="tname">Oral surgery</span><span class="tdesc">Extractions, impacted wisdom teeth and gingival surgery, under local or general anaesthesia.</span><span class="tgo">Explore →</span></div></a>
+  <a class="tcard" href="treatments/orthodontics.html"><div class="timg" style="background-image:url('assets/tedavi/tedavi-ortodonti.jpg')"></div><div class="tbody"><span class="tno">05</span><span class="tname">Orthodontics</span><span class="tdesc">Braces and clear aligners, for adults and teenagers.</span><span class="tgo">Explore →</span></div></a>
+  <a class="tcard" href="treatments/endodontics.html"><div class="timg" style="background-image:url('assets/tedavi/tedavi-endodonti.jpg')"></div><div class="tbody"><span class="tno">06</span><span class="tname">Endodontics</span><span class="tdesc">Root canal therapy that saves the tooth you were told to lose.</span><span class="tgo">Explore →</span></div></a>
+  <a class="tcard" href="treatments/periodontology.html"><div class="timg" style="background-image:url('assets/tedavi/tedavi-periodontoloji.jpg')"></div><div class="tbody"><span class="tno">07</span><span class="tname">Periodontology</span><span class="tdesc">Gum health and restorative therapy. The foundation every smile stands on.</span><span class="tgo">Explore →</span></div></a>
+  <a class="tcard" href="treatments/jaw-joint-and-pediatric-care.html"><div class="timg" style="background-image:url('assets/tedavi/tedavi-cene-cocuk.jpg')"></div><div class="tbody"><span class="tno">08</span><span class="tname">Jaw joint and pediatric care</span><span class="tdesc">TMJ disorders treated with allied medical branches; children seen in their own clinic.</span><span class="tgo">Explore →</span></div></a>
+</div>
   <div class="smilegrid reveal d1">
     <figure><img src="assets/bosphorus-img02.jpg" alt="Patient smiling at Dental Bosphorus" loading="lazy"></figure>
     <figure><img src="assets/bosphorus-img03.jpg" alt="Patient smiling at Dental Bosphorus" loading="lazy"></figure>
