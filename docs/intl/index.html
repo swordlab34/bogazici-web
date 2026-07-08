@@ -264,7 +264,10 @@ header.on-dark .seal-sm .b{stroke:var(--petrol-deep)}
 .drow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .dslot{position:relative;aspect-ratio:3/4;background:var(--bone-deep);display:flex;align-items:center;justify-content:center}
 .dslot .rule{width:64px;height:1px;background:var(--gold)}
-.dslot figcaption{position:absolute;bottom:12px;left:14px;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.dslot figcaption{position:absolute;bottom:12px;left:14px;right:14px;font-size:10px;line-height:1.5;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+.dslot .dphoto{position:absolute;inset:0;background-size:cover;background-position:center top;z-index:0}
+.dslot .dveil{position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(20,30,28,0) 55%,rgba(20,30,28,.55) 100%)}
+.dslot figcaption{z-index:2;color:#fff}
 .act-tech{position:relative;z-index:1;padding:clamp(48px,7.5vh,88px) clamp(24px,5vw,72px);background:var(--bone)}
 .tech{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--hairline)}
 .tech>div{padding:22px 24px 22px 0;border-bottom:1px solid var(--hairline)}
@@ -464,7 +467,7 @@ footer .legalnav a{border-bottom:1px solid var(--hairline);padding-bottom:2px}
     </svg>
     <span class="sub">Istanbul · smile atelier</span>
   </a>
-  <a class="begin" href="#" aria-label="Begin a conversation on WhatsApp">Begin a conversation</a>
+  <a class="begin" href="https://wa.me/WA_NUMARA?text=Hello%2C%20I%20would%20like%20information%20from%20Dental%20Bosphorus." aria-label="Begin a conversation on WhatsApp">Begin a conversation</a>
 </header>
 
 <section class="act-open">
@@ -515,7 +518,7 @@ footer .legalnav a{border-bottom:1px solid var(--hairline);padding-bottom:2px}
     <h1 class="reveal">The smile is<br>a <em>craft.</em></h1>
     <p class="standfirst reveal d1">Veneers, implants and complete smile design from an Istanbul atelier. We began as a dental laboratory, and it shows: every restoration we fit is still shaped at our own bench. Write to us in your own language, at any hour. A person answers.</p>
     <div class="cta reveal d2">
-      <a class="cta-line" href="#">Begin a conversation<span class="arrow">→</span></a>
+      <a class="cta-line" href="https://wa.me/WA_NUMARA?text=Hello%2C%20I%20would%20like%20information%20from%20Dental%20Bosphorus.">Begin a conversation<span class="arrow">→</span></a>
     </div>
   </div>
   <figure class="hero-stage reveal d1">
@@ -634,9 +637,9 @@ footer .legalnav a{border-bottom:1px solid var(--hairline);padding-bottom:2px}
   </div>
   <p class="dintro reveal" style="max-width:64ch;color:var(--ink-soft);font-size:15.5px;line-height:1.7;margin:0 0 clamp(20px,3vh,32px)">Eight disciplines, each led by its own specialist. Surgeons, prosthodontists, orthodontists and endodontists whose experience is measured in decades. The dentist who plans your treatment performs it, and answers for it afterwards.</p>
   <div class="drow reveal d1">
-    <figure class="dslot"><span class="rule" aria-hidden="true"></span><figcaption>Portrait · dentist · to come</figcaption></figure>
-    <figure class="dslot"><span class="rule" aria-hidden="true"></span><figcaption>Portrait · dentist · to come</figcaption></figure>
-    <figure class="dslot"><span class="rule" aria-hidden="true"></span><figcaption>Portrait · dentist · to come</figcaption></figure>
+    <figure class="dslot"><div class="dphoto" style="background-image:url('assets/dt-mustafa-imamoglu.jpg')"></div><div class="dveil"></div><figcaption>Mustafa Onur İmamoğlu · Implants & Oral Surgery</figcaption></figure>
+    <figure class="dslot"><div class="dphoto" style="background-image:url('assets/dt-eda.jpg')"></div><div class="dveil"></div><figcaption>Edanur Alkan · Prosthetics & Restorative Dentistry</figcaption></figure>
+    <figure class="dslot"><div class="dphoto" style="background-image:url('assets/dt-sevtap-sehlikoglu.jpg')"></div><div class="dveil"></div><figcaption>Sevtap Bihter Sehlikoğlu · Aesthetic Dentistry & Implants</figcaption></figure>
   </div>
 </section>
 
@@ -782,7 +785,7 @@ footer .legalnav a{border-bottom:1px solid var(--hairline);padding-bottom:2px}
   </svg>
   <p class="line reveal d1">A smile is worn every day, in every light. We design it accordingly.</p>
   <div class="cta reveal d2">
-    <a class="cta-line" href="#">Begin a conversation<span class="arrow">→</span></a>
+    <a class="cta-line" href="https://wa.me/WA_NUMARA?text=Hello%2C%20I%20would%20like%20information%20from%20Dental%20Bosphorus.">Begin a conversation<span class="arrow">→</span></a>
   </div>
 </section>
 
