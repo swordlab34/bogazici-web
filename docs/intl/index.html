@@ -127,6 +127,30 @@ header.on-dark .seal-sm .b{stroke:var(--petrol-deep)}
   font-size:11px;letter-spacing:.2em;text-transform:uppercase;
   color:rgba(241,237,227,.45);
 }
+.hero-stage .hero-photo{
+  position:absolute;inset:0;
+  background-size:cover;background-position:center;
+  transform:scale(1.06);
+  animation:heroZoom 20s ease-in-out infinite alternate;
+  will-change:transform;
+}
+@keyframes heroZoom{
+  from{transform:scale(1.06)}
+  to{transform:scale(1.14)}
+}
+.hero-stage .hero-veil{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to bottom,
+    rgba(6,20,32,.15) 0%,
+    rgba(6,20,32,0) 32%,
+    rgba(6,20,32,.55) 100%);
+}
+.hero-stage .band-a,.hero-stage .band-c{display:none}
+.hero-stage .band-b{z-index:2;top:auto;bottom:0;opacity:.7}
+.hero-stage figcaption{z-index:3}
+@media (prefers-reduced-motion:reduce){
+  .hero-stage .hero-photo{animation:none;transform:scale(1.06)}
+}
 .ticker{
   grid-column:1 / -1;
   border-top:1px solid var(--hairline);
@@ -481,10 +505,12 @@ footer .legalnav a{border-bottom:1px solid var(--hairline);padding-bottom:2px}
     </div>
   </div>
   <figure class="hero-stage reveal d1">
-    <video autoplay muted loop playsinline preload="metadata" poster="assets/bosphorus-img01.jpg">
-      <source src="assets/bosphorus-video01.mp4" type="video/mp4">
-    </video>
-    <figcaption>Film · a smile taking shape</figcaption>
+    <div class="hero-photo" style="background-image:url('assets/hero-resepsiyon.webp')"></div>
+    <div class="hero-veil"></div>
+    <div class="band-a"></div>
+    <div class="band-b"></div>
+    <div class="band-c"></div>
+    <figcaption>Bosphorus · reception</figcaption>
   </figure>
   <div class="ticker reveal d2">
     <span>Implantology</span><span>Aesthetic dentistry</span><span>Crowns and bridges</span><span>Oral surgery</span><span>Orthodontics</span><span>Endodontics</span><span>Periodontology</span><span>Jaw joint and pediatric care</span>
