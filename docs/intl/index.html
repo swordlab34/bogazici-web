@@ -272,7 +272,7 @@ header.on-dark .seal-sm .b{stroke:var(--petrol-deep)}
 .tx .desc{font-size:14.5px;color:var(--ink-soft);max-width:44ch}
 .tx .go{justify-self:end;color:var(--ink-soft);font-size:18px;transition:color .3s,transform .3s}
 .tx a:hover .go{color:var(--gold);transform:translateX(4px)}
-.smilegrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.smilegrid{margin-top:clamp(32px,5vh,64px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 .smilegrid figure{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--bone-deep)}
 .smilegrid img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.94)}
 @media (max-width:1020px){.smilegrid{grid-template-columns:repeat(3,minmax(0,1fr))}}
