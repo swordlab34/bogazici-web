@@ -368,24 +368,24 @@ header.on-dark .seal-sm .b{stroke:var(--petrol-deep)}
   font-size:clamp(28px,3.8vw,48px);letter-spacing:-.01em;
 }
 .act-licence .micro{color:var(--gold-soft)}
-.lic{
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+.htr{max-width:340px;margin:56px auto 0;display:flex;flex-direction:column;align-items:center;text-align:center}.htr-box{width:200px;height:160px;background:#fff;display:flex;align-items:center;justify-content:center;padding:16px;box-shadow:0 6px 24px rgba(0,0,0,.4);margin-bottom:20px}.htr-box img{max-width:100%;max-height:100%;object-fit:contain}.htr-t{color:var(--bone);font-family:Fraunces,Georgia,serif;font-size:20px;margin-bottom:8px}.htr-d{color:var(--ink-soft);font-size:14px;line-height:1.6;max-width:340px}.lic{
+  display:grid;gap:32px 40px;grid-template-columns:repeat(3,minmax(0,1fr));
   border-top:1px solid var(--hairline-light);
 }
 .lic>div{
   padding:22px 24px 22px 0;
   border-bottom:1px solid var(--hairline-light);
 }
-.lic>div+div{border-left:1px solid var(--hairline-light);padding-left:24px}
+.lic>div+div{border-left:none;padding-left:0}
 .lic .t{
   font-family:"Fraunces",Georgia,serif;font-weight:420;
   font-size:clamp(17px,1.9vw,21px);line-height:1.3;
-}
-.lic .d{margin-top:8px;font-size:13.5px;line-height:1.6;color:rgba(241,237,227,.62)}
+;min-height:56px}
+.lic .d{margin-top:8px;font-size:13.5px;line-height:1.6;color:rgba(241,237,227,.62);min-height:66px}
 .lic .emblem.plate{background:#FFFFFF;border:none;width:190px;height:190px;min-height:190px;padding:18px;display:flex;align-items:center;justify-content:center;margin:20px auto 0}
 .lic .emblem.plate img{max-width:100%;max-height:100%;width:auto;height:auto;display:block}
-.lic .emblem.cert{background:#FFFFFF;border:none;height:auto;min-height:0;padding:10px;margin-top:20px}
-.lic .emblem.cert img{width:100%;height:auto;display:block}
+.lic .emblem.cert{margin-top:auto;height:280px;display:flex;align-items:center;justify-content:center;background:none;border:none;padding:0;box-shadow:none}
+.lic .emblem.cert img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;box-shadow:0 6px 24px rgba(0,0,0,.4)}
 .lic .emblem{
   margin-top:14px;height:52px;
   border:1px dashed rgba(241,237,227,.3);
@@ -400,7 +400,7 @@ header.on-dark .seal-sm .b{stroke:var(--petrol-deep)}
 .act-licence .badges{justify-content:center}
 .act-licence .badges+.micro{text-align:center}
 @media (max-width:820px){
-  .lic{grid-template-columns:1fr}
+  .lic{grid-template-columns:1fr}.htr{margin-top:36px}
   .lic>div{padding:18px 0}
   .lic>div+div{border-left:none;padding-left:0}
 }
@@ -716,88 +716,14 @@ footer .legalnav a{border-bottom:1px solid var(--hairline);padding-bottom:2px}
   <div class="lic reveal d1">
     <div>
       <p class="t">Ministry of Health facility licence</p>
-      <p class="d">A fully licensed oral and dental health polyclinic in Istanbul, inspected and accountable under Turkish health law.</p>
+      <p class="d">A fully licensed oral and dental health polyclinic in Istanbul, inspected and accountable under Turkish health law.</p><div class="emblem cert"><img src="assets/belge-ruhsat.jpg" alt="Ministry of Health facility licence" loading="lazy"></div>
     </div>
     <div>
       <p class="t">International health tourism authorisation</p>
       <p class="d">Authorised by the Ministry of Health to treat international patients. The certificate is displayed on this site, as the law requires.</p>
-      <div class="emblem cert"><img src="assets/bosphorus-img16.jpg" alt="International Health Tourism Authorization Certificate · Republic of Türkiye Ministry of Health" loading="lazy"></div>
-    </div>
-    <div>
-      <p class="t">HealthTürkiye member</p>
-      <p class="d">Part of Türkiye's official health-tourism programme, registered on the national HealthTürkiye portal, with independent patient-satisfaction oversight.</p>
-      <div class="emblem plate"><img src="https://cdn.healthturkiye.gov.tr/other/heart-of-health1-1.svg" alt="HealthTürkiye · Heart of Health" loading="lazy"></div>
-    </div>
-  </div>
-    <div class="badges reveal d2">
-    <span class="badge"><svg viewBox="0 0 24 24" width="20" height="20" fill="#00B67A"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.5 6.8L12 16.9 5.9 20.3l1.5-6.8L2.2 8.9l6.9-.6z"/></svg><span>Trustpilot<br><b>★★★★★ 4.8</b></span></span>
-    <span class="badge"><span class="ring" style="border-color:#B23A48;color:#B23A48">TEMOS</span><span>Excellence in<br>Dental Tourism</span></span>
-    <span class="badge"><span class="ring" style="border-color:#1B4E8A;color:#1B4E8A">ISO</span><span>9001:2015<br>Certified</span></span>
-    <span class="badge"><b style="font-size:15px;letter-spacing:0"><span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span></b><span>Verified Reviews<br><b style="color:#F4B400">★★★★★</b></span></span>
-  </div>
-  <p class="micro reveal d2" style="margin-top:10px;color:rgba(241,237,227,.45)">Accreditations and ratings · in progress, shown as intended</p>
-<p class="note reveal d2">Surgical procedures are covered by mandatory complication insurance. Our international patient unit is staffed by certified multilingual coordinators. The person who answers your first message stays with you to the last.</p>
-</section>
-
-<div class="gap" aria-hidden="true"></div>
-
-<section class="act-close">
-  <svg class="seal-lg reveal" viewBox="0 0 200 200" role="img" aria-label="Dental Bosphorus seal · the bridge that smiles">
-    <defs>
-      <clipPath id="clipLg"><circle cx="100" cy="100" r="56"/></clipPath>
-      <path id="ringLg" d="M 100,22 a 78,78 0 1,1 -0.01,0 z"/>
-    </defs>
-    <circle cx="100" cy="100" r="96" fill="none" stroke="var(--ink)" stroke-width="1"/>
-    <circle cx="100" cy="100" r="66" fill="none" stroke="var(--ink)" stroke-width=".8"/>
-    <text font-family="Instrument Sans,sans-serif" font-size="9.2" letter-spacing="3.4" fill="var(--ink-soft)" font-weight="500">
-      <textPath href="#ringLg" startOffset="0">DENTAL BOSPHORUS · ISTANBUL · EST. MCMLXIV · SMILE ATELIER ·</textPath>
-    </text>
-    <g clip-path="url(#clipLg)">
-      <circle cx="100" cy="100" r="56" fill="var(--petrol-deep)"/>
-      <g stroke="var(--bone)" stroke-width=".7" opacity=".8">
-        <line x1="60" y1="105.5" x2="60" y2="112"/>
-        <line x1="68" y1="94"   x2="68" y2="112"/>
-        <line x1="82" y1="88.3" x2="82" y2="112"/>
-        <line x1="88" y1="97"   x2="88" y2="112"/>
-        <line x1="94" y1="102.3" x2="94" y2="112"/>
-        <line x1="100" y1="104" x2="100" y2="112"/>
-        <line x1="106" y1="102.3" x2="106" y2="112"/>
-        <line x1="112" y1="97"  x2="112" y2="112"/>
-        <line x1="118" y1="88.3" x2="118" y2="112"/>
-        <line x1="132" y1="94"  x2="132" y2="112"/>
-        <line x1="140" y1="105.5" x2="140" y2="112"/>
-      </g>
-      <path d="M 52,112 Q 66,108 76,76 M 124,76 Q 134,108 148,112"
-            fill="none" stroke="var(--gold)" stroke-width="1.9" stroke-linecap="round"/>
-      <path d="M 76,76 C 84,102 92,104 100,104 C 108,104 116,102 124,76"
-            fill="none" stroke="var(--gold)" stroke-width="2.2" stroke-linecap="round"/>
-      <g stroke="var(--bone)">
-        <path d="M 74.6,114 L 75.8,76 M 77.4,114 L 76.4,76" stroke-width="1.6" fill="none"/>
-        <path d="M 122.6,114 L 123.6,76 M 125.4,114 L 124.2,76" stroke-width="1.6" fill="none"/>
-        <line x1="73.6" y1="83" x2="78.4" y2="83" stroke-width="1.1"/>
-        <line x1="74"   y1="97" x2="78"   y2="97" stroke-width="1.1"/>
-        <line x1="121.6" y1="83" x2="126.4" y2="83" stroke-width="1.1"/>
-        <line x1="122"  y1="97" x2="126"  y2="97" stroke-width="1.1"/>
-      </g>
-      <line x1="46" y1="112" x2="154" y2="112" stroke="var(--bone)" stroke-width="1.8"/>
-      <line x1="46" y1="115" x2="154" y2="115" stroke="var(--bone)" stroke-width=".6" opacity=".65"/>
-      <g fill="none" stroke="var(--bone)">
-        <path d="M 56,126 q 6,-3 12,0 t 12,0 t 12,0 t 12,0 t 12,0 t 12,0" stroke-width=".9" opacity=".55"/>
-        <path d="M 62,134 q 6,-3 12,0 t 12,0 t 12,0 t 12,0 t 12,0" stroke-width=".9" opacity=".38"/>
-        <path d="M 70,142 q 6,-3 12,0 t 12,0 t 12,0 t 12,0" stroke-width=".9" opacity=".24"/>
-      </g>
-      <g stroke="var(--gold)" stroke-width="1" opacity=".5">
-        <line x1="97" y1="121" x2="97" y2="125"/>
-        <line x1="102" y1="120" x2="102" y2="127"/>
-        <line x1="107" y1="122" x2="107" y2="125"/>
-      </g>
-    </g>
-  </svg>
-  <p class="line reveal d1">A smile is worn every day, in every light. We design it accordingly.</p>
-  <div class="cta reveal d2">
-    <a class="cta-line" href="https://wa.me/905387834218?text=Hello%2C%20I%20would%20like%20information%20from%20Dental%20Bosphorus.">Begin a conversation<span class="arrow">→</span></a>
-  </div>
-</section>
+      <div class="emblem cert"><img src="assets/belge-yetki.jpg" alt="International Health Tourism Authorization Certificate · Republic of Türkiye Ministry of Health" loading="lazy"></div>
+    </div><div><p class="t">Operating permit</p><p class="d">Official operating permit issued by the Provincial Health Directorate — eight dental units, in-house prosthetics laboratory and panoramic imaging.</p><div class="emblem cert"><img src="assets/belge-faaliyet.jpg" alt="Operating permit" loading="lazy"></div></div></div><div class="htr"><div class="htr-box"><img src="https://cdn.healthturkiye.gov.tr/other/heart-of-health1-1.svg" alt="HealthTürkiye" loading="lazy"></div><p class="htr-t">HealthTürkiye member</p><p class="htr-d">Part of Türkiye's official health-tourism programme, registered on the national HealthTürkiye portal, with independent patient-satisfaction oversight.</p></div>
+    </section>
 
 <footer>
   <p class="addr"><a href="https://www.google.com/maps/search/Dental+Bosphorus+Ba%C4%9Fc%C4%B1lar+Istanbul" target="_blank" rel="noopener">Göztepe Mah. Batışehir Cad. Batışehir G3 Blok No: 6/G · 34200 Bağcılar / İstanbul</a></p>
