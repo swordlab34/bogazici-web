@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inlays and Onlays: Between Filling and Crown</title>
+<meta name="description" content="Dental inlays and onlays explained: the conservative middle ground between a filling and a crown, when they are the right choice, and how they compare.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#09102D;--violet:#123A63;--indigo:#1A4C82;--gold-soft:#E4A86E;--gold-mid:#A85E28;--gold-leaf:linear-gradient(150deg,#EFB579 0%,#C67A34 32%,#9A5622 62%,#5E2C0C 100%);--paper:#FFFFFF;--text:#1A1E2E;--muted:#4C4F57;--line:rgba(11,13,40,.10);--radius:16px;--wash:#F7F4EF}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.72;font-size:17px}
+a{color:var(--gold-mid)}
+.hdr{position:sticky;top:0;z-index:100;background:rgba(9,16,45,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(228,168,110,.18)}
+.hdr .in{max-width:1180px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:block}.brand-logo{height:48px;width:auto;display:block}
+.nav{display:flex;gap:24px;align-items:center}
+.nav a{color:#C9D4E6;text-decoration:none;font-size:14px;font-weight:600}.nav a:hover{color:#fff}
+.wa{background:var(--gold-leaf);color:#fff;padding:9px 18px;border-radius:30px;font-size:14px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(110,53,18,.35)}
+@media(max-width:720px){.nav a:not(.wa){display:none}}
+.a-hero{background:linear-gradient(160deg,#09102D,#123A63);color:#fff;padding:58px 0 50px}
+.a-wrap{max-width:760px;margin:0 auto;padding:0 28px}
+.micro{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft);margin:0}
+.a-hero h1{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(30px,5vw,44px);line-height:1.12;margin:16px 0 20px;color:#fff}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13.5px;color:#AEBDD4}
+.article{max-width:760px;margin:0 auto;padding:48px 28px 20px}
+.lead{font-size:19px;color:var(--ink);font-weight:500;line-height:1.6;margin:0 0 34px}
+.article h2{font-family:"Fraunces",serif;font-weight:600;font-size:26px;color:var(--ink);margin:44px 0 14px}
+.article h3{font-size:19px;font-weight:800;color:var(--ink);margin:26px 0 8px}
+.article p{margin:0 0 18px}
+.article ul{margin:0 0 18px;padding-left:22px}.article li{margin:7px 0}
+.article strong{color:var(--ink)}
+.article a{color:var(--gold-mid);border-bottom:1px solid rgba(168,94,40,.35);text-decoration:none}
+.pull{border-left:3px solid;border-image:var(--gold-leaf) 1;background:var(--wash);padding:20px 24px;border-radius:0 12px 12px 0;margin:30px 0}
+.pull .micro{color:var(--gold-mid)}
+.pull p{margin:8px 0 0;font-family:"Fraunces",serif;font-size:20px;line-height:1.5;color:var(--violet)}
+.faq{margin:44px 0 8px}.faq h2{margin-bottom:16px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:16px 32px 16px 0;position:relative;font-weight:700;font-size:16.5px;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:14px;font-size:22px;color:var(--gold-mid)}
+.faq details[open] summary::after{content:"\2013"}
+.faq details p{padding:0 0 18px;color:var(--muted);font-size:15.5px;margin:0}
+.related{background:var(--wash);border-radius:var(--radius);padding:24px 26px;margin:40px 0}
+.related h4{margin:0 0 12px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-mid)}
+.related a{display:block;padding:8px 0;color:var(--ink);text-decoration:none;font-weight:600;border-bottom:1px solid var(--line)}
+.related a:last-child{border:0}.related a:hover{color:var(--gold-mid)}
+.notice{font-size:13px;color:var(--muted);font-style:italic;border-top:1px solid var(--line);padding-top:18px;margin:30px 0}
+.a-cta{text-align:center;background:linear-gradient(160deg,#09102D,#123A63);border-radius:20px;padding:44px 28px;margin:44px 0;color:#fff}
+.a-cta h3{font-family:"Fraunces",serif;font-weight:600;font-size:25px;margin:0 0 10px;color:#fff}
+.a-cta p{color:#C9D4E6;margin:0 0 22px;font-size:15px}
+.a-cta .wa{display:inline-flex;align-items:center;gap:9px;padding:14px 30px;font-size:15px;color:#fff!important}
+.backlink{display:inline-block;margin:8px 0 40px;color:var(--gold-mid);text-decoration:none;font-weight:700;font-size:14px}
+.ftr{background:#09102D;color:#8fa4c0;text-align:center;padding:28px;font-size:13px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Inlays and Onlays: Between Filling and Crown", "description": "What dental inlays and onlays are and when they are the conservative right choice.", "author": {"@type": "Organization", "name": "Dental Bosphorus"}, "publisher": {"@type": "Organization", "name": "Dental Bosphorus"}, "datePublished": "2026-07-17"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are dental inlays and onlays?", "acceptedAnswer": {"@type": "Answer", "text": "Custom-made restorations crafted in a laboratory and bonded onto a tooth, repairing damage too large for a simple filling but not extensive enough for a full crown. An inlay fits within the cusps of a tooth; an onlay also covers one or more cusps. They preserve more natural tooth than a crown."}}, {"@type": "Question", "name": "When would I need an inlay or onlay instead of a crown?", "acceptedAnswer": {"@type": "Answer", "text": "When a tooth has damage or a failed large filling that is too much for a new filling, but where a full crown would remove more healthy tooth than necessary. Inlays and onlays give a strong, durable restoration while keeping more of your natural tooth, which is the conservative choice."}}, {"@type": "Question", "name": "Are inlays and onlays better than fillings?", "acceptedAnswer": {"@type": "Answer", "text": "For moderate-to-large repairs, they can be stronger and longer-lasting than a big direct filling, because they are precisely made in a laboratory and bonded to fit. A very large filling can weaken a tooth or fail over time, whereas an inlay or onlay restores strength more reliably."}}]}</script>
+</head>
+<body>
+<header class="hdr"><div class="in">
+  <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt="Dental Bosphorus" class="brand-logo"></a>
+  <nav class="nav"><a href="../index.html#treatments">Treatments</a><a href="../index.html#guide">Guides</a><a href="index.html">The Journal</a><a href="../index.html#faq">FAQ</a><a class="wa" href="https://wa.me/905387834218">WhatsApp</a></nav>
+</div></header>
+<section class="a-hero"><div class="a-wrap">
+  <p class="micro">The Journal &middot; Crowns &amp; Bridges</p>
+  <h1>Inlays and onlays: the middle ground between filling and crown</h1>
+  <div class="meta"><span>Published 17 July 2026</span><span>&middot; 6 min read</span></div>
+</div></section>
+<article class="article">
+  <p class="lead">Between a simple filling and a full crown sits a lesser-known middle ground: inlays and onlays. For the right tooth, they can restore damage while preserving more of your natural tooth than a crown would. They are worth understanding, because a good dentist reaches for them when they are the conservative right answer. This article explains what they are and when they make sense.</p>
+
+  <h2>The middle ground explained</h2>
+  <p>An inlay or onlay is a custom-made restoration, crafted in a laboratory and bonded onto a tooth, that repairs damage too large for a simple filling but not extensive enough to need a full crown. An inlay fits within the cusps of a tooth; an onlay covers one or more cusps as well. They sit precisely between a filling and a crown in how much tooth they replace, and crucially, in how much they preserve.</p>
+
+  <div class="pull"><span class="micro">Why they matter</span><p>Inlays and onlays fix bigger damage while keeping more natural tooth than a crown. Conservative dentistry at its best.</p></div>
+
+  <h2>When they are the right choice</h2>
+  <p>Inlays and onlays suit a tooth with damage or a failed large filling that is too much for a new filling but where a full crown would remove more healthy tooth than necessary. In these cases they offer the best of both: a strong, durable, well-fitting restoration that keeps more of your natural tooth intact. For a tooth that falls in this middle zone, they are often the most conservative sound option, which is exactly what good dentistry aims for.</p>
+
+  <h2>How they compare with a crown</h2>
+  <p>The key advantage over a crown is preservation. A crown covers the whole tooth and removes a lot of structure; an inlay or onlay repairs only the damaged part, keeping more healthy tooth. Both are strong and long-lasting when well made. So where a tooth does not truly need the full coverage of a crown, an inlay or onlay achieves a durable repair with less loss. This is the same conservative principle behind favouring veneers over crowns for cosmetic cases, as our <a href="veneers-vs-crowns-difference.html">veneers vs crowns article</a> discusses.</p>
+
+  <h2>How they compare with a filling</h2>
+  <p>Compared with a large direct filling, inlays and onlays are stronger and often longer-lasting for bigger repairs, because they are precisely made in a laboratory and bonded to fit. A very large filling can weaken a tooth or fail over time, whereas an inlay or onlay restores strength more reliably. For a moderate-to-large repair, they can be the more durable choice, which is why a dentist may recommend one over simply placing a big filling.</p>
+
+  <h2>Why they are worth asking about</h2>
+  <p>Inlays and onlays matter because they represent conservative dentistry: fixing a tooth properly while removing as little healthy structure as possible. If you are told a tooth needs a crown, it is reasonable to ask whether an inlay or onlay would do the job with less tooth removed, where appropriate. A dentist who considers them is one thinking about preserving your teeth, not defaulting to the most extensive option. Our <a href="what-is-a-dental-crown.html">what is a crown article</a> covers when full coverage is genuinely needed.</p>
+  <div class="related"><h4>Continue reading</h4><a href="what-is-a-dental-crown.html">What is a dental crown? &rarr;</a><a href="veneers-vs-crowns-difference.html">Veneers vs crowns &rarr;</a><a href="crown-materials-compared.html">Crown materials compared &rarr;</a></div>
+  <div class="notice">This article is for general information for prospective patients. It is not a substitute for a clinical examination, and any treatment decision is made by a qualified dentist after assessing your individual case.</div>
+  <div class="a-cta"><h3>Wondering if an inlay or onlay suits your tooth?</h3><p>Send us a message on WhatsApp. Ask about the most conservative option for your tooth.</p><a class="wa" href="https://wa.me/905387834218?text=Hi%2C%20I%20have%20a%20question%20about%20inlays%20and%20onlays."><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2z"/></svg> Message us on WhatsApp</a></div>
+  <a class="backlink" href="crowns-bridges.html">&larr; More crowns &amp; bridges articles</a>
+</article>
+<footer class="ftr">Dental Bosphorus &middot; Istanbul &middot; Licensed oral &amp; dental health polyclinic</footer>
+</body>
+</html>
