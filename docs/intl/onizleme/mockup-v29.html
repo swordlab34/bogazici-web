@@ -251,6 +251,26 @@
 .sw input:checked+label::after{transform:translateX(18px)}
 .sw input:disabled+label{opacity:.55;cursor:not-allowed}
 @media(max-width:520px){.cc-btns button{flex:1 1 100%}}
+
+/* price promise */
+.pp{background:linear-gradient(120deg,#09102D 0%,#123A63 62%,#1A4C82 100%);border-radius:24px;color:#fff;position:relative;overflow:hidden}
+.pp-grid{display:grid;grid-template-columns:.9fr 1.1fr;align-items:stretch}
+.pp-visual{position:relative;min-height:420px;background:linear-gradient(160deg,#0E1A3D,#123A63 60%,#1A4C82);overflow:hidden}
+.pp-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.pp-emblem{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:118px;height:118px;border-radius:50%;background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.22),transparent 55%),var(--gold-leaf);display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px rgba(110,53,18,.5),inset 0 2px 0 rgba(255,255,255,.35);z-index:2}
+.pp-emblem svg{width:52px;height:52px;color:#fff}
+.pp-emblem::after{content:"";position:absolute;inset:-9px;border:1.5px solid rgba(228,168,110,.5);border-radius:50%}
+.pp-body{padding:50px 46px}
+.pp .eyebrow{color:var(--gold-soft)}
+.pp h2{font-size:clamp(24px,3vw,34px);font-weight:800;letter-spacing:-.02em;margin:13px 0 12px;max-width:18ch}
+.pp .lead{margin:0 0 26px;color:#C9D4E6;font-size:15.5px;max-width:48ch}
+.pp-list{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.pp-list li{display:flex;gap:14px;align-items:flex-start;font-size:14.5px;color:#EAF0F8}
+.pp-list .ic{flex:0 0 auto;width:40px;height:40px;border-radius:11px;background:rgba(228,168,110,.13);border:1px solid rgba(228,168,110,.28);display:flex;align-items:center;justify-content:center}
+.pp-list .ic svg{width:20px;height:20px;color:var(--gold-soft)}
+.pp-list b{color:#fff}
+.pp-foot{margin-top:24px;font-size:12.5px;color:#9fb4d0}
+@media(max-width:820px){.pp-grid{grid-template-columns:1fr}.pp-visual{min-height:240px}.pp-body{padding:34px 26px}}
 </style>
 </head>
 <body>
@@ -667,6 +687,32 @@
     </div>
   </div>
 </section>
+<section class="sec" id="price">
+  <div class="wrap">
+    <div class="pp reveal">
+      <div class="pp-grid">
+        <div class="pp-visual">
+          <img src="../assets/price-lock.jpg" alt="A written treatment plan and agreed price" loading="lazy" onerror="this.style.display='none'">
+          <div class="pp-emblem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" stroke-linecap="round"/><path d="M12 15v2" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="pp-body">
+          <span class="eyebrow">Our price promise</span>
+          <h2>The price you are quoted is the price you pay</h2>
+          <p class="lead">Your plan and its cost are agreed in writing before you travel. When you arrive, nothing changes — no add-ons at the chair, no surprises at checkout.</p>
+          <ul class="pp-list">
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h7l4 4v14H7z" stroke-linejoin="round"/><path d="M9 12h6M9 16h6" stroke-linecap="round"/></svg></span><div><b>Agreed before you fly.</b> A written plan and price, confirmed at your pre-consultation.</div></li>
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 8c0-2 2-3 4-3 1.5 0 2.5.8 4 .8S17.5 5 19 5c2 0 1 3 1 5 0 4-2 9-4 9-1.6 0-1.4-3-4-3s-2.4 3-4 3c-2 0-4-5-4-9z" stroke-linejoin="round"/></svg></span><div><b>No add-ons at the chair.</b> The treatment you agreed is the treatment you receive.</div></li>
+            <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v6c0 4-3 6.5-7 9-4-2.5-7-5-7-9V6l7-3z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>All-inclusive, in writing.</b> What is covered is stated clearly, from the start.</div></li>
+          </ul>
+          <p class="pp-foot">If clinical needs change, any adjustment is discussed and agreed with you before anything proceeds — never applied silently.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="sec" id="assurance">
   <div class="wrap">
