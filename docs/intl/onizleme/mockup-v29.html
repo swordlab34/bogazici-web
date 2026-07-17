@@ -203,6 +203,19 @@
 .ba .knob svg{width:20px;height:20px;color:#fff}
 .ba-cap{margin-top:12px;font-size:13.5px;color:var(--muted)}.ba-cap b{color:var(--ink);font-weight:700}
 .ba-note{margin-top:18px;font-size:13px;color:var(--muted);font-style:italic}
+
+/* assurance */
+#assurance{background:#09102D;color:#fff}
+#assurance .eyebrow{color:var(--gold-soft)}
+#assurance .s-head h2{color:#fff}#assurance .s-head p{color:#C9D4E6;max-width:60ch}
+.asr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.asr{background:rgba(255,255,255,.04);border:1px solid rgba(228,168,110,.22);border-radius:var(--radius);padding:26px 24px;position:relative;overflow:hidden}
+.asr::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gold-leaf)}
+.asr .ic{width:46px;height:46px;border-radius:12px;background:rgba(228,168,110,.12);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.asr .ic svg{width:24px;height:24px;color:var(--gold-soft)}
+.asr h3{margin:0 0 8px;font-size:18px;font-weight:800;letter-spacing:-.01em;color:#fff}
+.asr p{margin:0;font-size:14.5px;color:#C9D4E6;line-height:1.6}
+@media(max-width:820px){.asr-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -602,6 +615,32 @@
   </div>
 </section>
 
+<section class="sec" id="assurance">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <span class="eyebrow">Assurance</span>
+      <h2 style="font-size:clamp(24px,3vw,34px);font-weight:800;letter-spacing:-.02em;margin:14px 0 12px">No question marks after you fly home</h2>
+      <p>What we fit is documented, guaranteed and insured — so there is nothing left to wonder about once the treatment is done.</p>
+    </div>
+    <div class="asr-grid">
+      <div class="asr reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v6c0 4-3 6.5-7 9-4-2.5-7-5-7-9V6l7-3z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Material certificate</h3>
+        <p>The brand and batch of every implant and ceramic we place is recorded and handed to you in writing — you know exactly what is in your mouth.</p>
+      </div>
+      <div class="asr reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l2.3 4.7 5.2.8-3.8 3.7.9 5.2L12 15.9 7.4 17.4l.9-5.2L4.5 8.5l5.2-.8L12 3z" stroke-linejoin="round"/></svg></div>
+        <h3>Written guarantee</h3>
+        <p>Your treatment is covered by a written guarantee on the work we carry out.</p>
+      </div>
+      <div class="asr reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v6c0 4-3 6.5-7 9-4-2.5-7-5-7-9V6l7-3z" stroke-linejoin="round"/></svg></div>
+        <h3>Treatment insurance</h3>
+        <p>Your treatment is protected by insurance — cover that stays with you after you return home.</p>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="sec" id="licence">
   <div class="wrap">
     <div class="s-head reveal">
