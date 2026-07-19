@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Boğaziçi Diş amblemi">
+      <defs>
+        <clipPath id="clipFooter"><circle cx="100" cy="100" r="56"/></clipPath>
+        <path id="ringFooter" d="M 100,22 a 78,78 0 1,1 -0.01,0 z"/>
+      </defs>
+      <circle cx="100" cy="100" r="96" fill="none" stroke="#B8946E" stroke-width="1"/>
+      <circle cx="100" cy="100" r="66" fill="none" stroke="#B8946E" stroke-width=".8"/>
+      <text font-family="Instrument Sans,sans-serif" font-size="9.2" letter-spacing="3.4" fill="#D8BE9C" font-weight="500">
+        <textPath href="#ringFooter" startOffset="0">BOĞAZİÇİ DİŞ · ISTANBUL · EST. MCMLXIV · SMILE ATELIER ·</textPath>
+      </text>
+      <g clip-path="url(#clipFooter)">
+        <circle cx="100" cy="100" r="56" fill="#0D1738"/>
+        <g stroke="#E7D6BE" stroke-width=".7" opacity=".8">
+          <line x1="60" y1="105.5" x2="60" y2="112"/><line x1="68" y1="94" x2="68" y2="112"/>
+          <line x1="82" y1="88.3" x2="82" y2="112"/><line x1="88" y1="97" x2="88" y2="112"/>
+          <line x1="94" y1="102.3" x2="94" y2="112"/><line x1="100" y1="104" x2="100" y2="112"/>
+          <line x1="106" y1="102.3" x2="106" y2="112"/><line x1="112" y1="97" x2="112" y2="112"/>
+          <line x1="118" y1="88.3" x2="118" y2="112"/><line x1="132" y1="94" x2="132" y2="112"/>
+          <line x1="140" y1="105.5" x2="140" y2="112"/>
+        </g>
+        <path d="M 52,112 Q 66,108 76,76 M 124,76 Q 134,108 148,112" fill="none" stroke="#E9A86A" stroke-width="1.9" stroke-linecap="round"/>
+        <path d="M 76,76 C 84,102 92,104 100,104 C 108,104 116,102 124,76" fill="none" stroke="#E9A86A" stroke-width="2.2" stroke-linecap="round"/>
+        <g stroke="#E7D6BE">
+          <path d="M 74.6,114 L 75.8,76 M 77.4,114 L 76.4,76" stroke-width="1.6" fill="none"/>
+          <path d="M 122.6,114 L 123.6,76 M 125.4,114 L 124.2,76" stroke-width="1.6" fill="none"/>
+          <line x1="73.6" y1="83" x2="78.4" y2="83" stroke-width="1.1"/><line x1="74" y1="97" x2="78" y2="97" stroke-width="1.1"/>
+          <line x1="121.6" y1="83" x2="126.4" y2="83" stroke-width="1.1"/><line x1="122" y1="97" x2="126" y2="97" stroke-width="1.1"/>
+        </g>
+        <line x1="46" y1="112" x2="154" y2="112" stroke="#E7D6BE" stroke-width="1.8"/>
+        <line x1="46" y1="115" x2="154" y2="115" stroke="#E7D6BE" stroke-width=".6" opacity=".65"/>
+        <g fill="none" stroke="#E7D6BE">
+          <path d="M 56,126 q 6,-3 12,0 t 12,0 t 12,0 t 12,0 t 12,0 t 12,0" stroke-width=".9" opacity=".55"/>
+          <path d="M 62,134 q 6,-3 12,0 t 12,0 t 12,0 t 12,0 t 12,0" stroke-width=".9" opacity=".38"/>
+          <path d="M 70,142 q 6,-3 12,0 t 12,0 t 12,0" stroke-width=".9" opacity=".24"/>
+        </g>
+        <g stroke="#E9A86A" stroke-width="1" opacity=".5">
+          <line x1="97" y1="121" x2="97" y2="125"/><line x1="102" y1="120" x2="102" y2="127"/><line x1="107" y1="122" x2="107" y2="125"/>
+        </g>
+      </g>
+    </svg>
