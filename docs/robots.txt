@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /intl/
+
+Sitemap: https://bogaziciadsp.com/sitemap.xml
