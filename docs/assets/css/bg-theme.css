@@ -71,6 +71,10 @@ footer{background:var(--black);color:#fff;padding:56px 0 40px;margin-top:20px}
 .foot .addr b{color:#fff;font-weight:700;display:block;margin-bottom:6px;font-size:15px}
 .foot .addr a{color:inherit;text-decoration:none;transition:color .3s}
 .foot .addr a:hover{color:var(--gold-soft)}
+.addr a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.2);transition:border-color .18s}
+.addr a:hover{border-bottom-color:var(--gold-soft,#E4A86E)}
+.addr a.yol{display:block;margin-top:8px;border:none;font-size:13px;color:var(--gold-soft,#E4A86E)}
+.addr a.yol:hover{text-decoration:underline}
 .foot-cta{display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-wrap:wrap;justify-self:end;text-align:right}
 .seal-foot-wrap{display:flex;align-items:center;justify-content:center}
 .seal-footer{width:132px;height:132px;opacity:.92;display:block}
