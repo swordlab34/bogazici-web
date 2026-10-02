@@ -13,8 +13,8 @@
    - En küçük genişlik 120 px.
    - Üst menüye KONMADI: 74 px menü çubuğuna boşlukla birlikte sığmıyor (en az 147 px gerekir).
    - Hero: mühürün (.seal-hero) HEMEN ALTINDA, mühür merkezine ortalı (Reis 2 Eki). Mühür ile logo arası = boşluk.
-     820 px ve altında GÖSTERİLMEZ: mühür 112/88 px'e küçülünce ortalı logo + boşluk hero dışına taşıyor ve
-     hero metnine giriyor (2 Eki ölçüldü: 390'da logo 4 px taşar, 600'de paragrafa girer). 821 px ve üstü temiz.
+     820 px ve altında akış içinde, mühürün altında (bkz. dosya sonu); mühür merkezine tam ortalanamaz, sağa dayalı.
+     [TARİHSEL 2 Eki ilk hal: 820 px ve altında gösterilmiyordu.]
   Orijinal dosyalar git dışı belgeler/healthturkiye/ altında durur.
 */
 .ht-alan{--htw:140px;display:block;width:var(--htw);box-sizing:content-box;padding:calc(var(--htw) / 1.566 * .45)}
@@ -25,4 +25,9 @@
 /* Hero muhur alti. Muhur degerleri index.html .seal-hero ile AYNI olmali: top 24px, right 24px, genislik 187px (>820 px).
    right = muhur sag + muhur/2 - kutu/2 ; kutu = htw + 2 * htw/1.566*.45 */
 .ht-alan.ht-muhur{position:absolute;z-index:3;margin:0;top:calc(24px + 187px);right:calc(24px + 187px / 2 - var(--htw) * (.5 + .45 / 1.566))}
-@media(max-width:820px){.ht-alan.ht-muhur{display:none}}
+/* <=820 (Reis 2 Eki): AKIS ICINDE (absolute degil), muhurun hemen altinda; hero uzar, metne binmez. Ust bosluk = muhur alt kenari - izgara ic ust boslugu
+   (olculdu: <=520 muhur 12+88, ic bosluk 0 -> 100; 521-620 16+112, 0 -> 128; 621-820 16+112, 52 -> 76). Logo + bosluk hero icinde kalsin diye SAGA DAYALI:
+   muhur merkezine tam ortalanamaz (390'da ~38 px, 600'de ~22 px sola kayik) - muhur kenara 12-16 px, 120 px logo + bosluk sigmiyor. */
+@media(max-width:820px){.ht-alan.ht-muhur{--htw:120px;display:block;position:static;margin:76px 0 0 auto}}
+@media(max-width:620px){.ht-alan.ht-muhur{margin:128px -20px 0 auto}}
+@media(max-width:520px){.ht-alan.ht-muhur{margin-top:100px}}
