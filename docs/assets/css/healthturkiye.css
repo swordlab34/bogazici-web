@@ -31,3 +31,6 @@
 @media(max-width:820px){.ht-alan.ht-muhur{--htw:120px;display:block;position:static;margin:76px 0 0 auto}}
 @media(max-width:620px){.ht-alan.ht-muhur{margin:128px -20px 0 auto}}
 @media(max-width:520px){.ht-alan.ht-muhur{margin-top:100px}}
+/* EN ana sayfa (intl/index.html, 2 Eki): orada muhur <=820 px'te KUCULMEZ (187 px, top 24) -> akis ici ust bosluk buyuk. Olculdu: <=620 izgara ic ust bosluk 72 -> 211-72 = 139; 621-820 olculen ara 106.5 - 34.5 -> 159-72 = 87.*/
+@media(max-width:820px){.ht-alan.ht-muhur.ht-m187{margin-top:87px}}
+@media(max-width:620px){.ht-alan.ht-muhur.ht-m187{margin-top:139px}}
