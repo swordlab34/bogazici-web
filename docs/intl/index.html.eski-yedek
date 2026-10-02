@@ -1,5 +1,5 @@
 <!--
-  © 2026 Yıldırım Yavuz Kılıç. Tüm hakları saklıdır.
+  Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora
   Dental Bosphorus · international site · Act I draft v0.38
   Design & engineering: Y. Yavuz Kılıç
 -->
@@ -643,7 +643,6 @@ footer .legalnav a{border-bottom:1px solid var(--hairline);padding-bottom:2px}
   <div class="drow reveal d1">
     <figure class="dslot"><div class="dphoto" style="background-image:url('assets/dt-mustafa-imamoglu.jpg')"></div><div class="dveil"></div><figcaption>Mustafa Onur İmamoğlu · Implants, Oral & Maxillofacial Surgery, Aesthetic Dentistry, Periodontology</figcaption></figure>
     <figure class="dslot"><div class="dphoto" style="background-image:url('assets/dt-eda.jpg')"></div><div class="dveil"></div><figcaption>Edanur Alkan · Prosthetics, Restorative & Aesthetic Dentistry</figcaption></figure>
-    <figure class="dslot"><div class="dphoto" style="background-image:url('assets/dt-Hekim.jpg')"></div><div class="dveil"></div><figcaption>Hekim · Aesthetic Dentistry & Smile Design</figcaption></figure>
   </div>
 </section>
 
