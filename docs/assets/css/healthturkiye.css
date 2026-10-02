@@ -12,6 +12,9 @@
      temkinli %45 alınır -> boşluk = genişlik / 1.566 * 0.45.
    - En küçük genişlik 120 px.
    - Üst menüye KONMADI: 74 px menü çubuğuna boşlukla birlikte sığmıyor (en az 147 px gerekir).
+   - Hero: mühürün (.seal-hero) HEMEN ALTINDA, mühür merkezine ortalı (Reis 2 Eki). Mühür ile logo arası = boşluk.
+     820 px ve altında GÖSTERİLMEZ: mühür 112/88 px'e küçülünce ortalı logo + boşluk hero dışına taşıyor ve
+     hero metnine giriyor (2 Eki ölçüldü: 390'da logo 4 px taşar, 600'de paragrafa girer). 821 px ve üstü temiz.
   Orijinal dosyalar git dışı belgeler/healthturkiye/ altında durur.
 */
 .ht-alan{--htw:140px;display:block;width:var(--htw);box-sizing:content-box;padding:calc(var(--htw) / 1.566 * .45)}
@@ -19,3 +22,7 @@
 .ht-alan.ht-120{--htw:120px}
 .ht-orta{margin-left:auto;margin-right:auto}
 .ht-satir{flex-basis:100%;display:flex;justify-content:center}
+/* Hero muhur alti. Muhur degerleri index.html .seal-hero ile AYNI olmali: top 24px, right 24px, genislik 187px (>820 px).
+   right = muhur sag + muhur/2 - kutu/2 ; kutu = htw + 2 * htw/1.566*.45 */
+.ht-alan.ht-muhur{position:absolute;z-index:3;margin:0;top:calc(24px + 187px);right:calc(24px + 187px / 2 - var(--htw) * (.5 + .45 / 1.566))}
+@media(max-width:820px){.ht-alan.ht-muhur{display:none}}
