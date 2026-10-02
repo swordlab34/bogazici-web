@@ -1,0 +1,31 @@
+/*
+  Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora
+  Boğaziçi Diş · Dil seçici · dil-secici.css · v1 (2 Eki 2026)
+  Markup arsiv/dil/ortak.py tarafından TEK YERDEN üretilir (<!--ortak:dil-->). JS gerekmez (<details>).
+  Renk currentColor: koyu ve açık başlıkta okunur. Mantıksal konum: RTL (Arapça) sayfada liste doğru tarafta açılır.
+*/
+.dil-secici{position:relative;display:inline-block;margin-inline-end:12px;font:600 13px/1 "Plus Jakarta Sans",system-ui,sans-serif;color:inherit;z-index:60}
+.dil-secici>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid currentColor;border-radius:999px;opacity:.88;letter-spacing:.06em;user-select:none;min-height:36px;box-sizing:border-box}
+.dil-secici>summary::-webkit-details-marker{display:none}
+.dil-secici>summary::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px)}
+.dil-secici[open]>summary,.dil-secici>summary:hover{opacity:1}
+.dil-secici>summary:focus-visible{outline:2px solid #E4A86E;outline-offset:2px}
+.dil-secici ul{position:absolute;inset-inline-end:0;top:calc(100% + 8px);margin:0;padding:6px;list-style:none;background:#fff;color:#09102D;border-radius:12px;box-shadow:0 14px 34px rgba(9,16,45,.22);min-width:168px}
+.dil-secici li{margin:0}
+.dil-secici a{display:flex;justify-content:space-between;gap:14px;padding:10px 12px;border-radius:8px;color:#09102D;text-decoration:none;letter-spacing:.04em}
+.dil-secici a span{font-weight:400;opacity:.7;letter-spacing:0}
+.dil-secici a:hover,.dil-secici a:focus-visible{background:#F3EEE7;outline:none}
+.dil-secici a[aria-current]{background:#09102D;color:#fff}
+@media(max-width:520px){.dil-secici{margin-inline-end:8px}.dil-secici>summary{padding:8px 10px}}
+/* INTL tedavi/rehber sablonu: mobilde '.hdr .nav a:not(.wa){display:none}' secici baglantilarini da gizliyordu -> daha ozgul kural */
+.dil-secici.dil-secici.dil-secici ul li a{display:flex}   /* (0,3,3) > (0,3,1) */
+/* INTL .hdr sablonu (gap 40px): secici eklenince 390'da baslik 416 px -> tasma. Yalniz secicili baslikta ve <=520 px'te aralik daralir. */
+@media(max-width:520px){.hdr .in:has(> .dil-secici){gap:8px}}
+@media(max-width:400px){.hdr .in:has(> .dil-secici){padding-inline:12px}.dil-secici>summary{padding:8px 8px;gap:4px}}
+/* Yasal sayfa sablonu (header > .brand + .back + secici, gap 24px): 320'de tasma -> yalniz secicili baslikta daralt */
+@media(max-width:400px){header:has(> .dil-secici){gap:12px;padding-left:16px;padding-right:16px}header > .dil-secici{margin-inline-end:0}}
+@media(max-width:360px){.hdr .in:has(> .dil-secici) .wa{padding-left:10px;padding-right:10px}.hdr .in > .dil-secici{margin-inline-end:0}.hdr .in > .dil-secici>summary{padding:8px 6px}}
+/* Koyu baslik (TR/INTL .bar ve .hdr #09102D): basliklar renk tanimlamiyor, currentColor koyu kaliyordu -> acik renk */
+.bar .dil-secici,.hdr .dil-secici{color:#fff}
+/* RTL (Arapca): liste secicinin sag kenarina hizali, sola acilir (secici RTL'de baslangica yakin) */
+[dir="rtl"] .dil-secici ul{inset-inline-end:auto;inset-inline-start:0}
