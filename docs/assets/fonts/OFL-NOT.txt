@@ -1,0 +1,2 @@
+Bu dizindeki yazi tipleri (Fraunces, Plus Jakarta Sans, Instrument Sans) Google Fonts kaynaklidir ve
+SIL Open Font License 1.1 ile lisanslidir: https://openfontlicense.org (kendi sunucuda barindirma serbesttir).
