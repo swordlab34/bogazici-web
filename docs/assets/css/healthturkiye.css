@@ -1,0 +1,21 @@
+/*
+  Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora
+  Boğaziçi Diş · HealthTürkiye logosu · healthturkiye.css · v1 (2 Eki 2026)
+
+  KILAVUZ YOK: USHAŞ'ın yayımladığı HEALTHTURKIYE.zip (sha256 c40bfa3e...) içinde
+  HealthTürkiye için kullanım kılavuzu yoktur; ushas.gov.tr'deki Kurumsal Kimlik
+  Kılavuzu (Kasım 2025) yalnızca USHAŞ logosunu kapsar. Aşağıdaki kurallar
+  kılavuz yerine temkinli genel marka kuralıdır (Reis kararı, 2 Eki 2026):
+   - Logo DEĞİŞTİRİLMEZ: oran, renk, gölge, efekt yok (yalnız saydam kenar kırpıldı, küçültüldü).
+   - Açık zeminde renkli (ht-renkli.png), koyu zeminde beyaz (ht-beyaz.png) sürüm.
+   - Çevresinde kalp yüksekliği kadar boşluk: kalp = logo yüksekliğinin ~%44'ü,
+     temkinli %45 alınır -> boşluk = genişlik / 1.566 * 0.45.
+   - En küçük genişlik 120 px.
+   - Üst menüye KONMADI: 74 px menü çubuğuna boşlukla birlikte sığmıyor (en az 147 px gerekir).
+  Orijinal dosyalar git dışı belgeler/healthturkiye/ altında durur.
+*/
+.ht-alan{--htw:140px;display:block;width:var(--htw);box-sizing:content-box;padding:calc(var(--htw) / 1.566 * .45)}
+.ht-alan img{display:block;width:var(--htw);min-width:120px;height:auto;max-width:none;filter:none;box-shadow:none;opacity:1}
+.ht-alan.ht-120{--htw:120px}
+.ht-orta{margin-left:auto;margin-right:auto}
+.ht-satir{flex-basis:100%;display:flex;justify-content:center}
