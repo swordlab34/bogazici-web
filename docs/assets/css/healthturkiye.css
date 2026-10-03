@@ -13,7 +13,7 @@
    - En küçük genişlik 120 px.
    - Üst menüye KONMADI: 74 px menü çubuğuna boşlukla birlikte sığmıyor (en az 147 px gerekir).
    - Hero: mühürün (.seal-hero) HEMEN ALTINDA, mühür merkezine ortalı (Reis 2 Eki). Mühür ile logo arası = boşluk.
-     820 px ve altında akış içinde, mühürün altında (bkz. dosya sonu); mühür merkezine tam ortalanamaz, sağa dayalı.
+     820 px ve altında akış içinde, mühürün altında (bkz. dosya sonu). 3 Eki F465: mühür logoya kaydırılır, logo mühür merkezinde.
      [TARİHSEL 2 Eki ilk hal: 820 px ve altında gösterilmiyordu.]
   Orijinal dosyalar git dışı belgeler/healthturkiye/ altında durur.
 */
@@ -31,6 +31,11 @@
 @media(max-width:820px){.ht-alan.ht-muhur{--htw:120px;display:block;position:static;margin:76px 0 0 auto}}
 @media(max-width:620px){.ht-alan.ht-muhur{margin:128px -20px 0 auto}}
 @media(max-width:520px){.ht-alan.ht-muhur{margin-top:100px}}
-/* EN ana sayfa (intl/index.html, 2 Eki): orada muhur <=820 px'te KUCULMEZ (187 px, top 24) -> akis ici ust bosluk buyuk. Olculdu: <=620 izgara ic ust bosluk 72 -> 211-72 = 139; 621-820 olculen ara 106.5 - 34.5 -> 159-72 = 87.*/
-@media(max-width:820px){.ht-alan.ht-muhur.ht-m187{margin-top:87px}}
-@media(max-width:620px){.ht-alan.ht-muhur.ht-m187{margin-top:139px}}
+/* [TARIHSEL 2 Eki: EN ana sayfa (intl/index.html) muhuru <=820 px'te kuculmuyordu (187 px) ve .ht-m187 ust bosluk kurallari vardi. 3 Eki F465: EN de TR gibi
+   kuculur (112 / 88 px), .ht-m187 sinifi ve kurallari KALDIRILDI.] */
+/* F465 (3 Eki 2026, Reis karari A): <=820 px MUHUR, HealthTurkiye logosunun merkezine kaydirilir (logo 120 px alt sinir + bosluk ekrana sigmadigi icin logo degil MUHUR hareket eder).
+   Olculen fark (360-820 px, sabit): <=520 38.5 px (muhur kenari 12 -> 50.5), 521-820 22.5 px (16 -> 38.5). Yalniz muhur altinda HT logosu olan sayfalar (:has). RTL ayna (left).
+   <=400 px: ust hero logosu 72 -> 60 px (muhur ust logoya DEGMESIN; 360 / 375 / 390 px Chromium + WebKit olculdu). */
+@media(max-width:820px){html:has(.ht-muhur) .seal-hero{right:38.5px}html[dir="rtl"]:has(.ht-muhur) .seal-hero{right:auto;left:38.5px}}
+@media(max-width:520px){html:has(.ht-muhur) .seal-hero{right:50.5px}html[dir="rtl"]:has(.ht-muhur) .seal-hero{right:auto;left:50.5px}}
+@media(max-width:400px){html:has(.ht-muhur) .hero-logo{height:60px}}

@@ -214,6 +214,9 @@
   a:focus-visible,.btn:focus-visible{outline:2px solid var(--gold-soft);outline-offset:3px;border-radius:6px}
 .wc .wphoto{width:100%;height:150px;object-fit:cover;border-radius:12px;margin-bottom:16px;display:block;background:var(--paper-2)}.tphoto{width:100%;height:158px;object-fit:cover;border-radius:12px;display:block;margin-bottom:14px}.visual .face{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;z-index:0}
   .seal-hero{width:187px;height:187px;position:absolute;top:24px;right:24px;z-index:3;margin:0}
+  /* F465 (3 Eki 2026): TR / DE / ES / RU ile AYNI - muhur <=820 px kuculur (once 187 px kalip ust logoya biniyordu) */
+  @media(max-width:820px){.seal-hero{width:112px;height:112px;top:16px;right:16px;opacity:.9}}
+  @media(max-width:520px){.seal-hero{width:88px;height:88px;top:12px;right:12px}}
   .rlogo{height:42px;width:auto;fill:#fff;display:block}.hero-logo{height:72px;width:auto;fill:#fff;display:block;margin-bottom:22px}
   .seal-1964{width:96px;height:96px;display:block;margin:0 auto 8px}
 .tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(216px,1fr));gap:20px}.tgrid.show-all a.tcard.hidden-treat{display:block}a.tcard.hidden-treat{display:none}.treat-more{text-align:center;margin-top:26px}.treat-more button{background:none;border:1px solid var(--gold-mid);color:var(--gold-mid);font-family:inherit;font-size:14px;font-weight:700;padding:12px 28px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}.treat-more button:hover{background:var(--gold-mid);color:#fff}a.tcard{text-decoration:none;color:inherit;display:block}
@@ -516,7 +519,7 @@
         </g>
       </g>
     </svg>
-      <div class="ht-alan ht-muhur ht-m187"><!-- HealthTurkiye: resmi kullanim kilavuzu YOK; temkinli kural ve bosluk hesabi assets/css/healthturkiye.css --><img src="../assets/healthturkiye/ht-beyaz.png" alt="HealthTürkiye" width="140" height="89"></div>
+      <div class="ht-alan ht-muhur"><!-- HealthTurkiye: resmi kullanim kilavuzu YOK; temkinli kural ve bosluk hesabi assets/css/healthturkiye.css --><img src="../assets/healthturkiye/ht-beyaz.png" alt="HealthTürkiye" width="140" height="89"></div>
       <span class="eyebrow h-eyebrow">Istanbul atelier · Est. 1964</span>
       <h1>The smile is<br>a <span class="accent">craft</span>.</h1>
       <p class="lead">Veneers, implants and complete smile design from an Istanbul atelier. We began as a dental laboratory, and it shows, every restoration we fit is still shaped at our own bench. Write to us in your own language.</p>
@@ -866,7 +869,7 @@
       </g>
     </svg>
       <div class="soc-foot">
-        <a href="https://www.instagram.com/bogazici.dis/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.instagram.com/bogazici.dental/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor" stroke="none"/></svg></a>
         <a href="https://www.facebook.com/profile.php?id=100088344533410" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.4 21v-6.9h2.3l.35-2.85H13.4V9.4c0-.8.25-1.38 1.42-1.38h1.35V5.5c-.5-.06-1.22-.12-2.05-.12-2.15 0-3.62 1.31-3.62 3.72v2.15H8.2v2.85h2.3V21h2.9z"/></svg></a>
         <a href="https://www.tiktok.com/@bogazicidis" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 5.8a4.2 4.2 0 0 1-2.6-1.6 4.2 4.2 0 0 1-.8-2.2h-2.8v11.9a2.4 2.4 0 1 1-1.9-2.35V8.7a5.2 5.2 0 1 0 4.7 5.17V8.6a6.9 6.9 0 0 0 4 1.28V7.06a4.2 4.2 0 0 1-.6-.06z"/></svg></a>
       </div>
@@ -879,7 +882,7 @@
       </a>
     </div>
   </div>
-  <div class="wrap copy"><div class="ht-satir"><div class="ht-alan ht-orta"><!-- HealthTurkiye: resmi kullanim kilavuzu YOK; temkinli kural ve bosluk hesabi assets/css/healthturkiye.css --><img src="../assets/healthturkiye/ht-beyaz.png" alt="HealthTürkiye" width="140" height="89" loading="lazy"></div></div><span>© 2026 Boğaziçi Diş · Istanbul</span><span class="son-guncelleme">Last updated: 02.10.2026</span><span>Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora</span></div>
+  <div class="wrap copy"><div class="ht-satir"><div class="ht-alan ht-orta"><!-- HealthTurkiye: resmi kullanim kilavuzu YOK; temkinli kural ve bosluk hesabi assets/css/healthturkiye.css --><img src="../assets/healthturkiye/ht-beyaz.png" alt="HealthTürkiye" width="140" height="89" loading="lazy"></div></div><span>© 2026 Boğaziçi Diş · Istanbul</span><span class="son-guncelleme">Last updated: 03.10.2026</span><span>Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora</span></div>
 </footer>
 
 <script>
