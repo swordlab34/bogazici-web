@@ -1,0 +1,50 @@
+# Boğaziçi Diş Polikliniği
+
+> İstanbul Mahmutbey / Batışehir'de ruhsatlı ağız ve diş sağlığı polikliniği; klinik bünyesinde diş laboratuvarı. Licensed dental polyclinic with an in-house dental laboratory in Mahmutbey / Batışehir, Istanbul.
+
+- Adres / Address: Batışehir Sitesi G3 Blok No: 6/G, Mahmutbey, 34218 İstanbul, Türkiye
+- Konum / Map: https://www.google.com/maps?q=41.063694,28.841751 (41.063694, 28.841751)
+- Çalışma saatleri / Opening hours: Pazartesi-Cumartesi 09:00-22:00 (Monday-Saturday)
+- Telefon / Phone: 0212 706 96 09 (+90 212 706 96 09)
+- WhatsApp (Türkiye): 0553 314 92 53 - https://wa.me/905533149253
+- WhatsApp (international patients): +90 554 243 56 34 - https://wa.me/905542435634
+- Google: https://g.page/r/Cd-nlzpD56PtEBM
+- Instagram: https://www.instagram.com/bogazici.dis/
+
+## Tedaviler (Türkçe)
+
+- [İmplant](https://bogaziciadsp.com/tedaviler/implant.html)
+- [Estetik diş hekimliği](https://bogaziciadsp.com/tedaviler/estetik-dis-hekimligi.html)
+- [Kron ve köprü protezleri](https://bogaziciadsp.com/tedaviler/kron-ve-kopru-protezleri.html)
+- [Ortodonti](https://bogaziciadsp.com/tedaviler/ortodonti.html)
+- [Endodonti (kanal tedavisi)](https://bogaziciadsp.com/tedaviler/endodonti.html)
+- [Periodontoloji (diş eti)](https://bogaziciadsp.com/tedaviler/periodontoloji.html)
+- [Ağız, diş ve çene cerrahisi](https://bogaziciadsp.com/tedaviler/agiz-dis-ve-cene-cerrahisi.html)
+- [Çene eklemi ve çocuk diş hekimliği](https://bogaziciadsp.com/tedaviler/cene-eklemi-ve-cocuk-dis-hekimligi.html)
+- [Sık sorulan sorular](https://bogaziciadsp.com/sss.html)
+- [Sterilizasyon ve hijyen](https://bogaziciadsp.com/sterilizasyon.html)
+- [Teknoloji ve donanım](https://bogaziciadsp.com/teknoloji.html)
+
+## Treatments (English, international patients)
+
+- [Dental implants](https://bogaziciadsp.com/intl/treatments/implantology.html)
+- [Aesthetic dentistry and veneers](https://bogaziciadsp.com/intl/treatments/aesthetic-dentistry.html)
+- [Crowns and bridges](https://bogaziciadsp.com/intl/treatments/crowns-and-bridges.html)
+- [Orthodontics](https://bogaziciadsp.com/intl/treatments/orthodontics.html)
+- [Endodontics (root canal)](https://bogaziciadsp.com/intl/treatments/endodontics.html)
+- [Periodontology (gums)](https://bogaziciadsp.com/intl/treatments/periodontology.html)
+- [Oral surgery](https://bogaziciadsp.com/intl/treatments/oral-surgery.html)
+- [Jaw joint and paediatric care](https://bogaziciadsp.com/intl/treatments/jaw-joint-and-pediatric-care.html)
+- [Frequently asked questions](https://bogaziciadsp.com/intl/faq.html)
+- [The Journal](https://bogaziciadsp.com/intl/journal/)
+
+## Diller / Languages
+
+- [Türkçe](https://bogaziciadsp.com/)
+- [English](https://bogaziciadsp.com/intl/)
+- [Deutsch](https://bogaziciadsp.com/intl/de/)
+- [Español](https://bogaziciadsp.com/intl/es/)
+- [العربية](https://bogaziciadsp.com/intl/ar/)
+- [Русский](https://bogaziciadsp.com/intl/ru/)
+
+<!-- Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora -->

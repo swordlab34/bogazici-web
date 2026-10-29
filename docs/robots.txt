@@ -1,5 +1,16 @@
+# Built by Sword Lab | Copyright (c) 2026 Sword Lab (Y. Yavuz Kılıç) - Aidora
+# /intl/ arama motorlarina ACIK (Reis 29 Eki 2026, F647). Yapay zeka tarayicilari acikca izinli.
 User-agent: *
 Allow: /
-Disallow: /intl/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 
 Sitemap: https://bogaziciadsp.com/sitemap.xml
+Sitemap: https://bogaziciadsp.com/intl/sitemap.xml
