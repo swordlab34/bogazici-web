@@ -45,6 +45,7 @@
 <!--/ortak:head--><link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "VideoObject", "name": "Animasyon · Kimler için değerlendirilir?", "description": "Kimler için değerlendirilir? | İmplant", "thumbnailUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-cerrahi-poster.jpg", "contentUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-cerrahi.mp4", "uploadDate": "2026-11-01T00:00:00+03:00", "duration": "PT20S", "inLanguage": "tr"}, {"@type": "VideoObject", "name": "Animasyon · Tüm çene eksikliklerinde", "description": "Tüm çene eksikliklerinde | İmplant", "thumbnailUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v09-implant-all-on-4-poster.jpg", "contentUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v09-implant-all-on-4.mp4", "uploadDate": "2026-11-01T00:00:00+03:00", "duration": "PT16S", "inLanguage": "tr"}]}</script>
 </head>
 <body>
 
@@ -106,6 +107,10 @@
 <p>İmplant, çoğunlukla titanyumdan üretilen vida biçiminde bir yapay kök ile bunun üzerine takılan dayanak ve kron bölümlerinden oluşur. Titanyumun kemikle biyolojik olarak kaynaşabildiği, 1960'lı yıllarda İsveçli araştırmacı Per-Ingvar Brånemark ve ekibinin çalışmalarıyla gösterilmiş ve bu kaynaşma "osseointegrasyon" olarak adlandırılmıştır [3]. Günümüz implant tedavisi bu bilimsel temel üzerine kurulur. Titanyum alerjisi gibi özel durumlarda zirkonyum esaslı seramik implantlar da bir seçenek olabilir; hangi malzemenin uygun olduğuna muayene sonrasında hekim karar verir.</p>
 
 <h2>Kimler için değerlendirilir?</h2>
+<figure class="tv" data-f673="tedavi-cerrahi">
+<video data-tv width="1280" height="720" muted loop playsinline preload="none" poster="../assets/tedavi/tedavi-cerrahi-poster.jpg" aria-label="Animasyon · Kimler için değerlendirilir?" style="width:100%;height:auto;display:block"><source src="../assets/tedavi/tedavi-cerrahi.mp4" type="video/mp4"></video>
+<figcaption>Animasyon · Kimler için değerlendirilir?</figcaption>
+</figure>
 <p>Tek diş eksikliğinden tüm dişlerin kaybına kadar uzanan durumlarda implant bir seçenek olarak değerlendirilebilir. Uygunluk; çene kemiğinin hacmi ve yoğunluğu, diş eti sağlığı, genel sağlık durumu ve kullanılan ilaçlar birlikte ele alınarak belirlenir. Kontrolsüz diyabet, tedavi görmemiş diş eti hastalığı ve yoğun sigara kullanımı iyileşmeyi olumsuz etkileyebilen etkenlerdir [4]. Kemik hacminin yetersiz olduğu durumlarda kemik grefti veya sinüs tabanı yükseltme gibi ön işlemler gerekebilir.</p>
 
 <h2>Tedavi nasıl ilerler?</h2>
@@ -119,6 +124,10 @@
     </div>
 
 <h2>Tüm çene eksikliklerinde</h2>
+<figure class="tv" data-f673="09-implant-all-on-4">
+<video data-tv width="1920" height="1080" muted loop playsinline preload="none" poster="../assets/tedavi/tedavi-v09-implant-all-on-4-poster.jpg" aria-label="Animasyon · Tüm çene eksikliklerinde" style="width:100%;height:auto;display:block"><source src="../assets/tedavi/tedavi-v09-implant-all-on-4.mp4" type="video/mp4"><source src="../assets/tedavi/tedavi-v09-implant-all-on-4.webm" type="video/webm"></video>
+<figcaption>Animasyon · Tüm çene eksikliklerinde</figcaption>
+</figure>
 <p>Bir çenedeki tüm dişlerin eksik olduğu durumlarda, dört veya altı implant üzerine sabitlenen tam çene protezleri uygulanabilir. Bu yaklaşımlar hareketli protez kullanmak istemeyen hastalar için sabit bir seçenek sunar. Hangi yapılandırmanın uygun olduğu; kemik hacmi, kapanış ilişkisi ve genel sağlık durumuna göre hekim tarafından belirlenir.</p>
 
 <h2>Başarı oranı ve ömür</h2>
@@ -240,5 +249,6 @@
 </footer>
 
 <script>function menuToggle(){document.getElementById('mnav').classList.toggle('open');document.querySelector('.burger').classList.toggle('open');}</script>
+<script>/* F673 bolum videolari: gorununce oynar */(function(){var v=[].slice.call(document.querySelectorAll('video[data-tv]'));if(!v.length)return;var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;if(rm||!('IntersectionObserver' in window)){v.forEach(function(x){x.controls=true;});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){var x=e.target;if(e.isIntersecting){x.preload='auto';var p=x.play();if(p&&p.catch)p.catch(function(){x.controls=true;});}else{x.pause();}});},{rootMargin:'200px 0px',threshold:0.25});v.forEach(function(x){io.observe(x);});})();</script>
 </body>
 </html>

@@ -41,6 +41,7 @@
 <!--/ortak:head--><link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "VideoObject", "name": "Анимация · Лечение брекетами", "description": "Лечение брекетами | Ортодонтия", "thumbnailUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v15-ortodonti-sabit-tel-poster.jpg", "contentUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v15-ortodonti-sabit-tel.mp4", "uploadDate": "2026-11-01T00:00:00+03:00", "duration": "PT16S", "inLanguage": "ru"}, {"@type": "VideoObject", "name": "Анимация · После лечения: ретенция", "description": "После лечения: ретенция | Ортодонтия", "thumbnailUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v16-ortodonti-pekistirme-poster.jpg", "contentUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v16-ortodonti-pekistirme.mp4", "uploadDate": "2026-11-01T00:00:00+03:00", "duration": "PT17S", "inLanguage": "ru"}]}</script>
 </head>
 <body>
 <header>
@@ -84,12 +85,20 @@
 <h2>Зачем нужна ортодонтия?</h2>
 <p>Скученные зубы и зубы с неправильным прикусом трудно очищать; это может повышать риск кариеса и заболеваний дёсен. Кроме того, нарушения прикуса могут приводить к затруднениям при жевании и речи, а также к перегрузке челюстного сустава. Ортодонтическое лечение, перемещая зубы в правильное положение, поддерживает и функцию, и долгосрочное здоровье полости рта.</p>
 <h2>Лечение брекетами</h2>
+<figure class="tv" data-f673="15-ortodonti-sabit-tel">
+<video data-tv width="1920" height="1080" muted loop playsinline preload="none" poster="../../../assets/tedavi/tedavi-v15-ortodonti-sabit-tel-poster.jpg" aria-label="Анимация · Лечение брекетами" style="width:100%;height:auto;display:block"><source src="../../../assets/tedavi/tedavi-v15-ortodonti-sabit-tel.mp4" type="video/mp4"><source src="../../../assets/tedavi/tedavi-v15-ortodonti-sabit-tel.webm" type="video/webm"></video>
+<figcaption>Анимация · Лечение брекетами</figcaption>
+</figure>
 <p>При лечении несъёмными брекетами зубы постепенно перемещаются с помощью приклеенных к ним брекетов и дуг. Существуют металлические и менее заметные керамические варианты. Это эффективный метод при сложной скученности и нарушениях прикуса. Срок лечения зависит от случая и требует регулярных осмотров.</p>
 <h2>Прозрачные элайнеры</h2>
 <p>Прозрачные элайнеры — индивидуально изготовленные съёмные прозрачные аппараты, которые меняются через определённые промежутки времени. Их отличают эстетичный вид и возможность снимать их; во время еды и чистки зубов их можно снять. Они подходят не для каждого случая; показания оценивает врач с учётом степени скученности. Успех лечения зависит от ношения элайнеров в течение рекомендованного времени в день.</p>
 <h2>Ортодонтия для взрослых</h2>
 <p>Ортодонтическое лечение предназначено не только для детей; при подходящем состоянии зубов и дёсен его можно проводить в любом возрасте. У взрослых особенно важно оценить здоровье дёсен перед началом лечения.</p>
 <h2>После лечения: ретенция</h2>
+<figure class="tv tv-dikey" data-f673="16-ortodonti-pekistirme" style="max-width:420px;margin-left:auto;margin-right:auto">
+<video data-tv width="1080" height="1920" muted loop playsinline preload="none" poster="../../../assets/tedavi/tedavi-v16-ortodonti-pekistirme-poster.jpg" aria-label="Анимация · После лечения: ретенция" style="width:100%;height:auto;display:block"><source src="../../../assets/tedavi/tedavi-v16-ortodonti-pekistirme.mp4" type="video/mp4"><source src="../../../assets/tedavi/tedavi-v16-ortodonti-pekistirme.webm" type="video/webm"></video>
+<figcaption>Анимация · После лечения: ретенция</figcaption>
+</figure>
 <p>По завершении ортодонтического лечения для закрепления зубов в новом положении используются ретенционные аппараты (ретейнеры). Этот этап — неотъемлемая часть лечения, необходимая для сохранения достигнутого результата.</p>
 <div class="sss">
 <h2>Часто задаваемые вопросы</h2>
@@ -179,5 +188,6 @@
 </div>
 </footer>
 <script>function menuToggle(){document.getElementById('mnav').classList.toggle('open');document.querySelector('.burger').classList.toggle('open');}</script>
+<script>/* F673 bolum videolari: gorununce oynar */(function(){var v=[].slice.call(document.querySelectorAll('video[data-tv]'));if(!v.length)return;var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;if(rm||!('IntersectionObserver' in window)){v.forEach(function(x){x.controls=true;});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){var x=e.target;if(e.isIntersecting){x.preload='auto';var p=x.play();if(p&&p.catch)p.catch(function(){x.controls=true;});}else{x.pause();}});},{rootMargin:'200px 0px',threshold:0.25});v.forEach(function(x){io.observe(x);});})();</script>
 </body>
 </html>

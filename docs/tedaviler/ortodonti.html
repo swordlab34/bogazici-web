@@ -38,6 +38,7 @@
 <!--/ortak:head--><link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "VideoObject", "name": "Animasyon · Sabit tel tedavisi", "description": "Sabit tel tedavisi | Ortodonti", "thumbnailUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v15-ortodonti-sabit-tel-poster.jpg", "contentUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v15-ortodonti-sabit-tel.mp4", "uploadDate": "2026-11-01T00:00:00+03:00", "duration": "PT16S", "inLanguage": "tr"}, {"@type": "VideoObject", "name": "Animasyon · Tedavi sonrası: pekiştirme", "description": "Tedavi sonrası: pekiştirme | Ortodonti", "thumbnailUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v16-ortodonti-pekistirme-poster.jpg", "contentUrl": "https://bogaziciadsp.com/assets/tedavi/tedavi-v16-ortodonti-pekistirme.mp4", "uploadDate": "2026-11-01T00:00:00+03:00", "duration": "PT17S", "inLanguage": "tr"}]}</script>
 </head>
 <body>
 
@@ -95,6 +96,10 @@
 <p>Çapraşık ve hatalı kapanan dişlerin temizlenmesi zordur; bu durum çürük ve diş eti hastalığı riskini artırabilir. Kapanış bozuklukları ayrıca çiğneme, konuşma ve çene ekleminde zorlanmaya yol açabilir. Ortodontik tedavi, dişleri doğru konuma getirerek hem işlevi hem de uzun dönemli ağız sağlığını destekler.</p>
 
 <h2>Sabit tel tedavisi</h2>
+<figure class="tv" data-f673="15-ortodonti-sabit-tel">
+<video data-tv width="1920" height="1080" muted loop playsinline preload="none" poster="../assets/tedavi/tedavi-v15-ortodonti-sabit-tel-poster.jpg" aria-label="Animasyon · Sabit tel tedavisi" style="width:100%;height:auto;display:block"><source src="../assets/tedavi/tedavi-v15-ortodonti-sabit-tel.mp4" type="video/mp4"><source src="../assets/tedavi/tedavi-v15-ortodonti-sabit-tel.webm" type="video/webm"></video>
+<figcaption>Animasyon · Sabit tel tedavisi</figcaption>
+</figure>
 <p>Sabit tel tedavisinde dişlere yapıştırılan braketler ve teller aracılığıyla dişler kademeli olarak hareket ettirilir. Metal ve daha az görünür seramik seçenekleri vardır. Karmaşık çapraşıklık ve kapanış bozukluklarında etkili bir yöntemdir. Tedavi süresi vakaya göre değişir ve düzenli kontrol gerektirir.</p>
 
 <h2>Şeffaf plak</h2>
@@ -104,6 +109,10 @@
 <p>Ortodontik tedavi çocuklara özgü değildir; diş ve diş eti sağlığı uygun olduğu sürece her yaşta uygulanabilir. Yetişkinlerde tedavi öncesinde diş eti sağlığının değerlendirilmesi özellikle önemlidir.</p>
 
 <h2>Tedavi sonrası: pekiştirme</h2>
+<figure class="tv tv-dikey" data-f673="16-ortodonti-pekistirme" style="max-width:420px;margin-left:auto;margin-right:auto">
+<video data-tv width="1080" height="1920" muted loop playsinline preload="none" poster="../assets/tedavi/tedavi-v16-ortodonti-pekistirme-poster.jpg" aria-label="Animasyon · Tedavi sonrası: pekiştirme" style="width:100%;height:auto;display:block"><source src="../assets/tedavi/tedavi-v16-ortodonti-pekistirme.mp4" type="video/mp4"><source src="../assets/tedavi/tedavi-v16-ortodonti-pekistirme.webm" type="video/webm"></video>
+<figcaption>Animasyon · Tedavi sonrası: pekiştirme</figcaption>
+</figure>
 <p>Ortodontik tedavi tamamlandığında, dişlerin yeni konumlarında kalıcılığını sağlamak için pekiştirici (retainer) apareyler kullanılır. Bu aşama, elde edilen sonucun korunması açısından tedavinin ayrılmaz bir parçasıdır.</p>
 
   <div class="sss">
@@ -205,5 +214,6 @@
 </footer>
 
 <script>function menuToggle(){document.getElementById('mnav').classList.toggle('open');document.querySelector('.burger').classList.toggle('open');}</script>
+<script>/* F673 bolum videolari: gorununce oynar */(function(){var v=[].slice.call(document.querySelectorAll('video[data-tv]'));if(!v.length)return;var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;if(rm||!('IntersectionObserver' in window)){v.forEach(function(x){x.controls=true;});return;}var io=new IntersectionObserver(function(es){es.forEach(function(e){var x=e.target;if(e.isIntersecting){x.preload='auto';var p=x.play();if(p&&p.catch)p.catch(function(){x.controls=true;});}else{x.pause();}});},{rootMargin:'200px 0px',threshold:0.25});v.forEach(function(x){io.observe(x);});})();</script>
 </body>
 </html>

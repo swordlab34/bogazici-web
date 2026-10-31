@@ -14,3 +14,4 @@ Allow: /
 
 Sitemap: https://bogaziciadsp.com/sitemap.xml
 Sitemap: https://bogaziciadsp.com/intl/sitemap.xml
+Sitemap: https://bogaziciadsp.com/video-sitemap.xml
