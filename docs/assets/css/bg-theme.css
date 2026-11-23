@@ -65,7 +65,7 @@ nav a:hover{color:#fff}
 .btn-ghost:hover{background:rgba(255,255,255,.16);transform:translateY(-2px)}
 
 /* ============ 5) FOOTER (birebir) ============ */
-footer{background:var(--black);color:#fff;padding:56px 0 40px;margin-top:20px}
+footer{background:var(--black);color:#fff;padding:40px 0 32px;margin-top:0}
 .foot{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:30px;padding:56px 0 40px}
 .foot .addr{font-size:14px;color:rgba(255,255,255,.72);line-height:1.7;max-width:34ch}
 .foot .addr b{color:#fff;font-weight:700;display:block;margin-bottom:6px;font-size:15px}
@@ -101,7 +101,7 @@ footer .soc svg{width:22px;height:22px;display:block}
 .doc-byline span b{color:#fff;font-weight:700}
 
 /* Okuma kolonu */
-.doc{max-width:820px;margin:0 auto;padding:clamp(38px,6vh,64px) 28px clamp(56px,9vh,88px)}
+.doc{max-width:820px;margin:0 auto;padding:clamp(32px,5vh,52px) 28px clamp(28px,4vh,44px)}
 .doc figure{margin:0 0 30px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--paper-2)}
 .doc figure img{width:100%;height:auto;display:block}
 .doc figcaption{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding:11px 16px 13px}
